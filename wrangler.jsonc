@@ -7,15 +7,18 @@
 	"name": "talk-to-the-hand",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-04-15",
-	"compatibility_flags": [
-		"nodejs_compat"
-	],
+	"compatibility_flags": ["nodejs_compat"],
 	"assets": {
 		"binding": "ASSETS",
 		"directory": "./public"
 	},
 	"observability": {
 		"enabled": true
+	},
+	"env": {
+		"production": {
+			"routes": [{ "custom_domain": true, "pattern": "talk-to-the-hand.aiavenue.show" }]
+		}
 	}
 	/**
 	 * Smart Placement
