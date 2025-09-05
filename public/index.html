@@ -9,22 +9,52 @@
 			html, body {
 				height: 100%;
 			}
-			body {
-				margin: 0;
-				background: url('talk-to-the-hand.jpg') no-repeat center center fixed;
-				background-size: cover;
-				/* Optional: improve text readability over the image */
-				color: #ffffff;
-				text-shadow: 0 1px 2px rgba(0,0,0,0.6);
-			}
-			#heading {
-				margin: 2rem;
-				font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-			}
+				body {
+					margin: 0;
+					display: flex;
+					min-height: 100vh;
+					flex-direction: column;
+					background: url('talk-to-the-hand.jpg') no-repeat center center fixed;
+					background-size: cover;
+					/* Optional: improve text readability over the image */
+					color: #ffffff;
+					text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+				}
+				#heading {
+					margin: 2rem;
+					font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+				}
+				main {
+					flex: 1 0 auto;
+				}
+				footer {
+					margin-top: auto;
+					background: rgba(0, 0, 0, 0.6);
+					backdrop-filter: blur(2px);
+					padding: 0.75rem 1rem;
+					font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+					font-size: 0.95rem;
+					line-height: 1.35;
+					text-align: center;
+				}
+				footer a {
+					color: #ffead1;
+					text-decoration: underline;
+				}
+				footer a:hover {
+					text-decoration: none;
+				}
 		</style>
 	</head>
 	<body>
-		<h1 id="heading">Talk to the Hand</h1>
-		<elevenlabs-convai agent-id="QcuCR35fvZhYplW4RCoc"></elevenlabs-convai><script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
-	</body>
+			<main>
+				<h1 id="heading">Talk to the Hand</h1>
+				<!-- Get your widget from https://elevenlabs.io -->
+				<elevenlabs-convai agent-id="QcuCR35fvZhYplW4RCoc"></elevenlabs-convai><script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+			</main>
+			<footer>
+				<div>Built with 🧡 using <a href="https://developers.cloudflare.com" target="_blank" rel="noopener">Cloudflare Workers</a> && <a href="https://elevenlabs.io" target="_blank" rel="noopener">ElevenLabs Conversational Agent</a></div>
+				<div><a href="#" target="_blank" rel="noopener">👀 the code</a></div>
+			</footer>
+		</body>
 </html>

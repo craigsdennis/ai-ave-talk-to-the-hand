@@ -19,3 +19,22 @@
 ## Notes / Next options
 - I can add an overlay (e.g., semi-transparent dark layer) for improved text readability.
 - I can keep or remove the current text styling depending on your preference.
+
+---
+
+## Follow-up request
+- Add a sticky footer with two lines and links:
+  - “Built with 🧡 using Cloudflare Workers && ElevenLabs Conversational Agent”
+  - “👀 the code” (link to GitHub repo)
+- Center the footer text.
+
+## What I did (footer)
+- Converted layout to flex on `body` with `min-height: 100vh` and wrapped main content in `<main>` so the footer anchors at the bottom.
+- Added a translucent, blurred `footer` with two lines and links:
+  - Cloudflare Workers → https://developers.cloudflare.com
+  - ElevenLabs Conversational Agent → https://elevenlabs.io
+- Centered the footer text via `text-align: center;`.
+- Left “👀 the code” link as a placeholder (`#`) pending the GitHub URL.
+
+## File changes (footer)
+- Modified: `public/index.html`
