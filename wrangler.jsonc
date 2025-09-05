@@ -6,7 +6,7 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "talk-to-the-hand",
 	"main": "src/index.ts",
-	"compatibility_date": "2025-04-15",
+	"compatibility_date": "2025-09-01",
 	"compatibility_flags": ["nodejs_compat"],
 	"assets": {
 		"binding": "ASSETS",
